@@ -25,8 +25,12 @@
 │   ├── relief_items.csv
 │   ├── output.txt
 │   └── README.md
-└── Assignment_4/
-    ├── dijkstra.cpp
+├── Assignment_4/
+│   ├── dijkstra.cpp
+│   ├── output.txt
+│   └── README.md
+└── Assignment_5/
+    ├── multistage.cpp
     ├── output.txt
     └── README.md
 ```
@@ -41,6 +45,7 @@
 | **Assignment 2** | Movie Recommendation Data | Quick Sort (Partitioning) | Sorts movies by IMDb rating, release year, or watch popularity. |
 | **Assignment 3** | Emergency Relief Supply Plan | Fractional Knapsack (Greedy) | Maximizes utility score of emergency items within boat capacity. |
 | **Assignment 4** | Ambulance Route Optimization | Dijkstra's Algorithm (Shortest Path) | Finds the nearest hospital and shortest travel time from source. |
+| **Assignment 5** | Multistage Graph Route Optimization | Dynamic Programming (Multistage) | Finds minimum cost route in SwiftCargo logistics network with dynamic cost updates. |
 
 ---
 
@@ -49,7 +54,7 @@
 Navigate to any assignment directory and compile using `g++`:
 
 ```bash
-cd Assignment_1
-g++ mergesort.cpp -o mergesort
-./mergesort
+cd Assignment_5
+g++ multistage.cpp -o multistage
+./multistage
 ```
