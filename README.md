@@ -29,8 +29,12 @@
 │   ├── dijkstra.cpp
 │   ├── output.txt
 │   └── README.md
-└── Assignment_5/
-    ├── multistage.cpp
+├── Assignment_5/
+│   ├── multistage.cpp
+│   ├── output.txt
+│   └── README.md
+└── Assignment_6/
+    ├── knapsack_dp.cpp
     ├── output.txt
     └── README.md
 ```
@@ -46,6 +50,7 @@
 | **Assignment 3** | Emergency Relief Supply Plan | Fractional Knapsack (Greedy) | Maximizes utility score of emergency items within boat capacity. |
 | **Assignment 4** | Ambulance Route Optimization | Dijkstra's Algorithm (Shortest Path) | Finds the nearest hospital and shortest travel time from source. |
 | **Assignment 5** | Multistage Graph Route Optimization | Dynamic Programming (Multistage) | Finds minimum cost route in SwiftCargo logistics network with dynamic cost updates. |
+| **Assignment 6** | Disaster Relief Resource Allocation | 0/1 Knapsack (Dynamic Programming) | Optimally selects relief supplies with priority weights within truck capacity. |
 
 ---
 
@@ -54,7 +59,7 @@
 Navigate to any assignment directory and compile using `g++`:
 
 ```bash
-cd Assignment_5
-g++ multistage.cpp -o multistage
-./multistage
+cd Assignment_6
+g++ knapsack_dp.cpp -o knapsack_dp
+./knapsack_dp
 ```

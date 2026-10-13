@@ -1,0 +1,39 @@
+========================================================
+Student Name: Siddhesh Parkar
+PRN         : 124B1F021
+GitHub Repo : https://github.com/siddhesh160606/DAA_lab
+Assignment  : 6 - Disaster Relief Resource Allocation Using Dynamic Programming (0/1 Knapsack)
+========================================================
+
+Enter number of items: 2
+Enter truck capacity: 120
+
+Enter item details:
+Priority: 3 = Critical, 2 = High, 1 = Normal
+
+Item 1 name: medicine
+Weight: 80
+Utility: 120
+Priority: 2
+
+Item 2 name: food
+Weight: 70
+Utility: 100
+Priority: 3
+
+====================================
+ PRIORITY-WISE RELIEF ALLOCATION
+====================================
+
+Item: food
+Weight: 70 kg
+Utility: 100
+Priority: 3
+
+------------------------------------
+Total Weight : 70 kg
+Total Utility : 100
+Capacity : 120 kg
+
+Time Complexity : O(N * W)
+Space Complexity: O(N * W)
