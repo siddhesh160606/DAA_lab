@@ -1,0 +1,73 @@
+========================================================
+Student Name: Siddhesh Parkar
+PRN         : 124B1F021
+GitHub Repo : https://github.com/siddhesh160606/DAA_lab
+Assignment  : 8 - Travelling Salesman Problem (TSP) using Least Cost Branch and Bound
+========================================================
+
+============================================
+ SWIFTSHIP DELIVERY ROUTE OPTIMIZER
+ LC BRANCH AND BOUND ALGORITHM
+============================================
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 1
+
+Enter number of cities: 3
+
+Enter cost matrix:
+(Enter 0 for same city)
+0 1 2
+5 0 9
+12 23 0
+
+Enter time matrix:
+(Enter 0 for same city)
+0 15 20
+25 0 20
+35 20 0
+
+Data entered successfully!
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 4
+
+========================================
+ OPTIMAL DELIVERY ROUTE
+========================================
+Route: City 1 -> City 2 -> City 3 -> City 1
+Minimum Fuel/Travel Cost : 22
+Total Delivery Time : 70
+========================================
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 7
+
+Thank you for using SwiftShip Route Optimizer!

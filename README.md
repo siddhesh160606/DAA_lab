@@ -37,8 +37,12 @@
 │   ├── knapsack_dp.cpp
 │   ├── output.txt
 │   └── README.md
-└── Assignment_7/
-    ├── graph_coloring.cpp
+├── Assignment_7/
+│   ├── graph_coloring.cpp
+│   ├── output.txt
+│   └── README.md
+└── Assignment_8/
+    ├── tsp_branch_and_bound.cpp
     ├── output.txt
     └── README.md
 ```
@@ -56,6 +60,7 @@
 | **Assignment 5** | Multistage Graph Route Optimization | Dynamic Programming (Multistage) | Finds minimum cost route in SwiftCargo logistics network with dynamic cost updates. |
 | **Assignment 6** | Disaster Relief Resource Allocation | 0/1 Knapsack (Dynamic Programming) | Optimally selects relief supplies with priority weights within truck capacity. |
 | **Assignment 7** | Exam Timetable Scheduling | Graph Coloring (Backtracking) | Eliminates exam timetable clashes and assigns slots and rooms to courses. |
+| **Assignment 8** | Delivery Route Optimization | Travelling Salesman (Branch & Bound) | Determines minimum-cost Hamiltonian cycle using lower-bound pruning for SwiftShip. |
 
 ---
 
@@ -64,7 +69,7 @@
 Navigate to any assignment directory and compile using `g++`:
 
 ```bash
-cd Assignment_7
-g++ graph_coloring.cpp -o graph_coloring
-./graph_coloring
+cd Assignment_8
+g++ tsp_branch_and_bound.cpp -o tsp_branch_and_bound
+./tsp_branch_and_bound
 ```
