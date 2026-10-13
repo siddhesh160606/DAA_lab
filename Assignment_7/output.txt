@@ -1,0 +1,45 @@
+========================================================
+Student Name: Siddhesh Parkar
+PRN         : 124B1F021
+GitHub Repo : https://github.com/siddhesh160606/DAA_lab
+Assignment  : 7 - University Exam Timetable Scheduling Using Graph Coloring and Backtracking
+========================================================
+
+Enter number of courses: 5
+Enter number of rooms: 3
+
+Enter course names:
+Course 1: maths
+Course 2: physics
+Course 3: chemistry
+Course 4: cs
+Course 5: english
+
+Enter number of conflict edges: 5
+Enter conflict edges (course numbers):
+Example: 1 2 means Course 1 conflicts with Course 2
+Edge 1: 1 2
+Edge 2: 1 3
+Edge 3: 1 5
+Edge 4: 2 4
+Edge 5: 3 4
+
+Enter number of course pairs having common students: 2
+Enter course pairs having common students:
+Example: 1 3 means courses 1 and 3 have common students
+Pair 1: 1 2
+Pair 2: 2 4
+
+================================
+ EXAM TIMETABLE
+================================
+Minimum exam slots: 2
+
+Slot 1:
+Room 1 -> maths
+Room 2 -> cs
+
+Slot 2:
+Room 1 -> physics
+Room 2 -> chemistry
+Room 3 -> english

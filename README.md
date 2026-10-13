@@ -33,8 +33,12 @@
 │   ├── multistage.cpp
 │   ├── output.txt
 │   └── README.md
-└── Assignment_6/
-    ├── knapsack_dp.cpp
+├── Assignment_6/
+│   ├── knapsack_dp.cpp
+│   ├── output.txt
+│   └── README.md
+└── Assignment_7/
+    ├── graph_coloring.cpp
     ├── output.txt
     └── README.md
 ```
@@ -51,6 +55,7 @@
 | **Assignment 4** | Ambulance Route Optimization | Dijkstra's Algorithm (Shortest Path) | Finds the nearest hospital and shortest travel time from source. |
 | **Assignment 5** | Multistage Graph Route Optimization | Dynamic Programming (Multistage) | Finds minimum cost route in SwiftCargo logistics network with dynamic cost updates. |
 | **Assignment 6** | Disaster Relief Resource Allocation | 0/1 Knapsack (Dynamic Programming) | Optimally selects relief supplies with priority weights within truck capacity. |
+| **Assignment 7** | Exam Timetable Scheduling | Graph Coloring (Backtracking) | Eliminates exam timetable clashes and assigns slots and rooms to courses. |
 
 ---
 
@@ -59,7 +64,7 @@
 Navigate to any assignment directory and compile using `g++`:
 
 ```bash
-cd Assignment_6
-g++ knapsack_dp.cpp -o knapsack_dp
-./knapsack_dp
+cd Assignment_7
+g++ graph_coloring.cpp -o graph_coloring
+./graph_coloring
 ```
