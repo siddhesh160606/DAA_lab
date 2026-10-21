@@ -22,21 +22,63 @@ Assignment  : 8 - Travelling Salesman Problem (TSP) using Least Cost Branch and 
 -------------------------------------
 Enter your choice: 1
 
-Enter number of cities: 3
+Enter number of cities: 4
 
 Enter cost matrix:
 (Enter 0 for same city)
-0 1 2
-5 0 9
-12 23 0
+0 10 15 20
+10 0 35 25
+15 35 0 30
+20 25 30 0
 
 Enter time matrix:
 (Enter 0 for same city)
-0 15 20
-25 0 20
-35 20 0
+0 12 18 22
+12 0 40 28
+18 40 0 32
+22 28 32 0
 
 Data entered successfully!
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 2
+
+Cost Matrix:
+
+               C1       C2       C3       C4
+       C1       -      10      15      20
+       C2      10       -      35      25
+       C3      15      35       -      30
+       C4      20      25      30       -
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 3
+
+Time Matrix:
+
+               C1       C2       C3       C4
+       C1       -      12      18      22
+       C2      12       -      40      28
+       C3      18      40       -      32
+       C4      22      28      32       -
 
 
 --------------- MENU ----------------
@@ -53,9 +95,46 @@ Enter your choice: 4
 ========================================
  OPTIMAL DELIVERY ROUTE
 ========================================
-Route: City 1 -> City 2 -> City 3 -> City 1
-Minimum Fuel/Travel Cost : 22
-Total Delivery Time : 70
+Route: City 1 -> City 2 -> City 4 -> City 3 -> City 1
+Minimum Fuel/Travel Cost : 80
+Total Delivery Time      : 90
+========================================
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 5
+
+Enter source city: 1
+Enter destination city: 2
+Enter new cost: 45
+Cost updated successfully!
+
+
+--------------- MENU ----------------
+1. Enter City Data
+2. Display Cost Matrix
+3. Display Time Matrix
+4. Find Optimal Route
+5. Update Travel Cost
+6. Update Travel Time
+7. Exit
+-------------------------------------
+Enter your choice: 4
+
+========================================
+ OPTIMAL DELIVERY ROUTE
+========================================
+Route: City 1 -> City 3 -> City 4 -> City 2 -> City 1
+Minimum Fuel/Travel Cost : 80
+Total Delivery Time      : 90
 ========================================
 
 

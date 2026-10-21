@@ -31,10 +31,17 @@ Enter routes as: from to cost
 Enter source: 0
 Enter destination: 5
 
-========== RESULT ==========
+========== INITIAL RESULT ==========
 Minimum Delivery Cost: 8
 Optimal Route: 0 -> 2 -> 4 -> 5
+====================================
 
 Update route cost due to traffic/weather? (y/n): y
-Enter route (from to new_cost): 3 5 20
-Route cost updated successfully.
+Enter route (from to new_cost): 4 5 15
+
+[Route Cost Updated]: Edge 4 -> 5 now has cost 15
+
+========== RECALCULATED RESULT ==========
+New Minimum Delivery Cost: 9
+New Optimal Route: 0 -> 2 -> 3 -> 5
+=========================================

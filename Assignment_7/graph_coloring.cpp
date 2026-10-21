@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -108,26 +109,42 @@ int main() {
     vector<int> colors;
     int slots = findMinimumSlots(graph, colors);
 
-    cout << "\n================================\n";
-    cout << " EXAM TIMETABLE\n";
-    cout << "================================\n";
-    cout << "Minimum exam slots: " << slots << "\n";
+    cout << "\n=======================================================\n";
+    cout << "           OPTIMAL EXAM TIMETABLE ALLOCATION           \n";
+    cout << "=======================================================\n";
+    cout << "Minimum Required Exam Time Slots (Chromatic No.): " << slots << "\n";
+
+    vector<string> assignedRoom(n);
 
     for (int slot = 1; slot <= slots; slot++) {
-        cout << "\nSlot " << slot << ":\n";
+        cout << "\n>>> TIME SLOT " << slot << ":\n";
         int room = 1;
         for (int i = 0; i < n; i++) {
             if (colors[i] == slot) {
                 if (room <= rooms) {
-                    cout << "Room " << room << " -> " << course[i] << "\n";
+                    cout << "    [Classroom " << room << "] -> " << course[i] << " (Scheduled)\n";
+                    assignedRoom[i] = "Room " + to_string(room);
                     room++;
                 }
                 else {
-                    cout << "No room available -> " << course[i] << "\n";
+                    cout << "    [OVERFLOW]     -> " << course[i] << " (No classroom available!)\n";
+                    assignedRoom[i] = "Overflow (No Room)";
                 }
             }
         }
     }
+
+    cout << "\n=======================================================\n";
+    cout << "             COURSE SCHEDULE SUMMARY TABLE             \n";
+    cout << "=======================================================\n";
+    cout << left << setw(18) << "Course Name" << setw(18) << "Assigned Slot" << "Allocated Room" << endl;
+    cout << "-------------------------------------------------------\n";
+    for (int i = 0; i < n; i++) {
+        cout << left << setw(18) << course[i]
+             << setw(18) << ("Slot " + to_string(colors[i]))
+             << assignedRoom[i] << endl;
+    }
+    cout << "=======================================================\n";
 
     return 0;
 }

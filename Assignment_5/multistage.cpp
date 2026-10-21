@@ -94,7 +94,7 @@ int main() {
     }
     reverse(path.begin(), path.end());
 
-    cout << "\n========== RESULT ==========\n";
+    cout << "\n========== INITIAL RESULT ==========\n";
     cout << "Minimum Delivery Cost: " << dp[destination] << endl;
     cout << "Optimal Route: ";
     for (int i = 0; i < (int)path.size(); i++) {
@@ -103,6 +103,7 @@ int main() {
             cout << " -> ";
     }
     cout << endl;
+    cout << "====================================\n";
 
     // Real-time update
     char choice;
@@ -122,10 +123,52 @@ int main() {
             }
         }
 
-        if (found)
-            cout << "Route cost updated successfully.\n";
-        else
+        if (found) {
+            cout << "\n[Route Cost Updated]: Edge " << u << " -> " << v << " now has cost " << newCost << endl;
+
+            // Recalculate DP
+            fill(dp.begin(), dp.end(), INT_MAX);
+            fill(parent.begin(), parent.end(), -1);
+            dp[source] = 0;
+
+            for (int s = 0; s < stages - 1; s++) {
+                for (int i = 0; i < (int)nodes[s].size(); i++) {
+                    int u_node = nodes[s][i];
+                    if (dp[u_node] == INT_MAX)
+                        continue;
+                    for (int j = 0; j < (int)graph[u_node].size(); j++) {
+                        int v_node = graph[u_node][j].to;
+                        int cost_edge = graph[u_node][j].cost;
+                        if (dp[u_node] + cost_edge < dp[v_node]) {
+                            dp[v_node] = dp[u_node] + cost_edge;
+                            parent[v_node] = u_node;
+                        }
+                    }
+                }
+            }
+
+            if (dp[destination] == INT_MAX) {
+                cout << "\nNo valid route exists after update.\n";
+            } else {
+                vector<int> newPath;
+                for (int x = destination; x != -1; x = parent[x]) {
+                    newPath.push_back(x);
+                }
+                reverse(newPath.begin(), newPath.end());
+
+                cout << "\n========== RECALCULATED RESULT ==========\n";
+                cout << "New Minimum Delivery Cost: " << dp[destination] << endl;
+                cout << "New Optimal Route: ";
+                for (int i = 0; i < (int)newPath.size(); i++) {
+                    cout << newPath[i];
+                    if (i != (int)newPath.size() - 1)
+                        cout << " -> ";
+                }
+                cout << "\n=========================================\n";
+            }
+        } else {
             cout << "Route not found.\n";
+        }
     }
 
     return 0;
