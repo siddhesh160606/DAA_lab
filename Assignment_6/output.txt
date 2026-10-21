@@ -5,35 +5,85 @@ GitHub Repo : https://github.com/siddhesh160606/DAA_lab
 Assignment  : 6 - Disaster Relief Resource Allocation Using Dynamic Programming (0/1 Knapsack)
 ========================================================
 
-Enter number of items: 2
-Enter truck capacity: 120
+Enter number of items: 8
+Enter truck capacity: 150
 
 Enter item details:
 Priority: 3 = Critical, 2 = High, 1 = Normal
 
-Item 1 name: medicine
-Weight: 80
-Utility: 120
+Item 1 name: Medical_Kits
+Weight: 25
+Utility: 95
+Priority: 3
+
+Item 2 name: Water_Purifiers
+Weight: 30
+Utility: 90
+Priority: 3
+
+Item 3 name: High_Calorie_Food
+Weight: 40
+Utility: 85
+Priority: 3
+
+Item 4 name: Blood_Bags
+Weight: 15
+Utility: 98
+Priority: 3
+
+Item 5 name: Thermal_Blankets
+Weight: 35
+Utility: 70
 Priority: 2
 
-Item 2 name: food
-Weight: 70
-Utility: 100
-Priority: 3
+Item 6 name: Portable_Generator
+Weight: 50
+Utility: 80
+Priority: 2
+
+Item 7 name: Emergency_Tents
+Weight: 45
+Utility: 75
+Priority: 2
+
+Item 8 name: Hygiene_Kits
+Weight: 20
+Utility: 50
+Priority: 1
 
 ====================================
  PRIORITY-WISE RELIEF ALLOCATION
 ====================================
 
-Item: food
-Weight: 70 kg
-Utility: 100
+Item: Blood_Bags
+Weight: 15 kg
+Utility: 98
 Priority: 3
 
+Item: Medical_Kits
+Weight: 25 kg
+Utility: 95
+Priority: 3
+
+Item: Water_Purifiers
+Weight: 30 kg
+Utility: 90
+Priority: 3
+
+Item: High_Calorie_Food
+Weight: 40 kg
+Utility: 85
+Priority: 3
+
+Item: Thermal_Blankets
+Weight: 35 kg
+Utility: 70
+Priority: 2
+
 ------------------------------------
-Total Weight : 70 kg
-Total Utility : 100
-Capacity : 120 kg
+Total Weight : 145 kg
+Total Utility : 438
+Capacity : 150 kg
 
 Time Complexity : O(N * W)
 Space Complexity: O(N * W)

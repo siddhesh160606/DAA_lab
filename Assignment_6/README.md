@@ -33,7 +33,8 @@ $$\text{DP}[i][w] = \begin{cases} \text{DP}[i-1][w] & \text{if } w_i > w \\ \max
 
 ## Files
 - `knapsack_dp.cpp`: Source code implementing 0/1 Knapsack with priority weighting and backtrack path reconstruction.
-- `output.txt`: Sample execution output demonstrating optimal item selection and complexity verification.
+- `output.txt`: Comprehensive execution output demonstrating optimal item selection across 8 relief supplies under 150 kg truck capacity.
+- `Assignment_6_124B1F021.pdf`: Complete official PCCOE submission lab report.
 
 ## Compilation & Execution
 ```bash
