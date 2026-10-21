@@ -20,4 +20,4 @@ Enter ambulance start location (source): 0
 Enter number of hospitals: 2
 Enter hospital nodes: 3 5
 
-Nearest hospital is at node 3 with travel time 3 minutes.
+Nearest hospital is at node 3 with travel time 8 minutes.
